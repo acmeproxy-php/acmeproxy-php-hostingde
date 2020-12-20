@@ -1,21 +1,21 @@
 {
-  "name": "acmeproxy-php/acmeproxy-php-hostingde",
-  "type": "library",
-  "require": {
-    "acmeproxy-php/common": "*"
-  },
-  "autoload": {
-    "psr-4": {"acme\\hostingde\\": "src/"}
-  },
-  "minimum-stability": "dev",
-  "description": "",
-  "repositories": [
-    {
-      "type": "path",
-      "url": "/home/kuli/Projects/acmeproxy-php-common",
-      "options": {
-        "symlink": true
-      }
-    }
-  ]
+    "name": "acmeproxy-php/acmeproxy-php-hostingde",
+    "type": "library",
+    "require": {
+        "hostingde/api-php": "*",
+        "acmeproxy-php/acmeproxy-php-common": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "acme\\hostingde\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "description": "",
+    "repositories": [
+        {
+            "url": "https://github.com/hosting-de-labs/hostingde-api-php.git",
+            "type": "git"
+        }
+    ]
 }
