@@ -3,7 +3,7 @@
     "type": "library",
     "require": {
         "hostingde/api-php": "*",
-        "acmeproxy-php/acmeproxy-php-common": "*"
+        "acmeproxy-php/acmeproxy-php-common": "9999999-dev"
     },
     "autoload": {
         "psr-4": {

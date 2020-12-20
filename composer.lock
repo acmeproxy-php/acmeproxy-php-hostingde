@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b5ed9a3674dfdd159ef10e3bb4c5f465",
+    "content-hash": "90faca9953ea3b7ec68cefeb8cb51788",
     "packages": [
         {
             "name": "acmeproxy-php/acmeproxy-php-common",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/acmeproxy-php/acmeproxy-php-common.git",
-                "reference": "2c3d9cfc37d31c6dc9515a0fb8cc360d86624b87"
+                "reference": "f48692af057cb37aff933aa5924d3a3de0ef54e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acmeproxy-php/acmeproxy-php-common/zipball/2c3d9cfc37d31c6dc9515a0fb8cc360d86624b87",
-                "reference": "2c3d9cfc37d31c6dc9515a0fb8cc360d86624b87",
+                "url": "https://api.github.com/repos/acmeproxy-php/acmeproxy-php-common/zipball/f48692af057cb37aff933aa5924d3a3de0ef54e1",
+                "reference": "f48692af057cb37aff933aa5924d3a3de0ef54e1",
                 "shasum": ""
             },
             "default-branch": true,
@@ -32,7 +32,7 @@
                 "issues": "https://github.com/acmeproxy-php/acmeproxy-php-common/issues",
                 "source": "https://github.com/acmeproxy-php/acmeproxy-php-common/tree/master"
             },
-            "time": "2020-12-19T15:13:17+00:00"
+            "time": "2020-12-20T09:48:16+00:00"
         },
         {
             "name": "hostingde/api-php",
@@ -81,7 +81,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "acmeproxy-php/acmeproxy-php-common": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
