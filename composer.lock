@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "90faca9953ea3b7ec68cefeb8cb51788",
+    "content-hash": "575bfb7196e2c2c01771f9402588f364",
     "packages": [
         {
             "name": "acmeproxy-php/acmeproxy-php-common",
@@ -82,7 +82,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "acmeproxy-php/acmeproxy-php-common": 20
+        "acmeproxy-php/acmeproxy-php-common": 20,
+        "hostingde/api-php": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

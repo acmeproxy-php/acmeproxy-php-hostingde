@@ -2,8 +2,8 @@
     "name": "acmeproxy-php/acmeproxy-php-hostingde",
     "type": "library",
     "require": {
-        "hostingde/api-php": "*",
-        "acmeproxy-php/acmeproxy-php-common": "9999999-dev"
+        "acmeproxy-php/acmeproxy-php-common": "9999999-dev",
+        "hostingde/api-php": "9999999-dev"
     },
     "autoload": {
         "psr-4": {
