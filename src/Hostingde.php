@@ -9,7 +9,11 @@ use Hostingde\API\Filter;
 use Hostingde\API\Record;
 use Hostingde\API\Zone;
 
-require __DIR__ . '/../vendor/hostingde/api-php/require.php';
+// load hostingde require because its no real composer package
+
+$reflection = new \ReflectionClass(\Composer\Autoload\ClassLoader::class);
+$vendorDir = dirname(dirname($reflection->getFileName()));
+require $vendorDir . '/hostingde/api-php/require.php';
 
 class Hostingde extends Client
 {
