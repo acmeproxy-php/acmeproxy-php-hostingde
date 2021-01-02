@@ -6,6 +6,20 @@ Package for ACME PHP Proxy [acmeproxy-php/acmeproxy-php](https://github.com/acme
 
 ACME PHP Proxy is installed via [Composer](https://getcomposer.org/).
 
+First you need to add the hosting.de Repository
+
+```
+// composer.json
+"repositories": [
+    {
+        "url": "https://github.com/hosting-de-labs/hostingde-api-php.git",
+        "type": "git"
+    }
+]
+```
+
+After that you can install this package by composer
+
 ```
 composer require acmeproxy-php/acmeproxy-php-hostingde
 ```
