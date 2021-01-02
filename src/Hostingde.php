@@ -26,8 +26,12 @@ class Hostingde extends Client
      */
     public function present(string $fqdn, string $txt)
     {
+        // $fqdn = "_acme-challenge.letsencrypt01.example.org."
+        // remove last "."
+        $domain = substr($fqdn, 0, -1);
+
         $record = new Record();
-        $record->set('name', $fqdn);
+        $record->set('name', $domain);
         $record->set('type', 'TXT');
         $record->set('content', $txt);
         $record->set('ttl', 60);
@@ -56,8 +60,12 @@ class Hostingde extends Client
         $found = null;
         // txt records are saved with quotes, add these quotes to find record
         $txtZone = '"' . $txt . '"';
+
+        // $fqdn = "_acme-challenge.letsencrypt01.example.org."
+        // remove last "."
+        $domain = substr($fqdn, 0, -1);
         foreach ($records as $record) {
-            if ($record->name === $fqdn && $record->content === $txtZone) {
+            if ($record->name === $domain && $record->content === $txtZone) {
                 $found = $record;
             }
         }
