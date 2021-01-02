@@ -84,7 +84,7 @@ class Hostingde extends Client
     protected function getZone(string $fqdn): Zone
     {
         $splitZone = explode(".", $fqdn);
-        $zoneName = implode(".", array_slice($splitZone, -2, 2));
+        $zoneName = implode(".", array_slice($splitZone, -3, 2));
 
         $api = new DnsApi($this->config["apiKey"]);
         $filter = new Filter();
